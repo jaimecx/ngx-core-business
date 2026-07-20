@@ -1,4 +1,4 @@
-@import "../../../scss/vars";
+@use "../../../scss/vars" as *;
 .wrapper {
   display: flex;
   width: 100%;

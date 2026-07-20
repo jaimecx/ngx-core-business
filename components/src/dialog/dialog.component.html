@@ -1,14 +1,22 @@
 <h2 mat-dialog-title>{{title}}</h2>
 <div mat-dialog-content [innerHTML]="safeMessage" [ngStyle]="{'max-width': maxWidth?maxWidth + 'px':null}"></div>
 <mat-dialog-actions align="end" class="text-right">
-  <ng-container *ngFor="let option of options">
-    <button *ngIf="!option.buttonType" (click)="onOptionClick(option)" mat-button
+  @for (option of options; track option) {
+    @if (!option.buttonType) {
+      <button (click)="onOptionClick(option)" mat-button
       [color]="option.buttonColor">{{option.text}}</button>
-    <button *ngIf="option.buttonType == 'normal'" (click)="onOptionClick(option)" mat-button
+    }
+    @if (option.buttonType == 'normal') {
+      <button (click)="onOptionClick(option)" mat-button
       [color]="option.buttonColor">{{option.text}}</button>
-    <button *ngIf="option.buttonType == 'raised'" (click)="onOptionClick(option)" mat-raised-button
+    }
+    @if (option.buttonType == 'raised') {
+      <button (click)="onOptionClick(option)" mat-raised-button
       [color]="option.buttonColor">{{option.text}}</button>
-    <button *ngIf="option.buttonType == 'stroked'" (click)="onOptionClick(option)" mat-stroked-button
+    }
+    @if (option.buttonType == 'stroked') {
+      <button (click)="onOptionClick(option)" mat-stroked-button
       [color]="option.buttonColor">{{option.text}}</button>
-  </ng-container>
+    }
+  }
 </mat-dialog-actions>

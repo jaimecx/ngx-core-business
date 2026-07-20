@@ -1,4 +1,8 @@
-<img *ngIf="getAvarType()=='image'" [src]="src" alt="Avatar" />
-<span *ngIf="getAvarType()=='text'" class="avatar-name" [style]="{'lineHeigth.px':size }">
+@if (getAvarType()=='image') {
+  <img [src]="src" alt="Avatar" />
+}
+@if (getAvarType()=='text') {
+  <span class="avatar-name" [style]="{'lineHeigth.px':size }">
     <span class="initials">{{getInitials()}}</span>
-</span>
+  </span>
+}

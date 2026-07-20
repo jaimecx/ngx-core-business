@@ -3,48 +3,53 @@
     <mat-icon>menu</mat-icon>
   </button>
   <ng-content select="[beforeAppName]"></ng-content>
-  <span *ngIf="appName" class="px-[6px]">{{ appName }}</span>
+  @if (appName) {
+    <span class="px-[6px]">{{ appName }}</span>
+  }
   <ng-content select="[afterAppName]"></ng-content>
   <div class="flex-1 flex">
     <ng-content select="[content]"></ng-content>
   </div>
   <ng-content select="[beforeUser]"></ng-content>
-  <div
-    *ngIf="showDefaultUserInfo"
-    cdkOverlayOrigin
-    #trigger="cdkOverlayOrigin"
-    class="flex cursor-pointer px-[6px]"
-  >
-    <ngbiz-avatar
-      [src]="user?.picture"
-      [name]="user?.name"
-      [size]="avatarSize"
-      (click)="showMenu = !showMenu"
-    ></ngbiz-avatar>
-    <!-- User menu -->
-    <ng-template
-      cdkConnectedOverlayHasBackdrop
-      cdkConnectedOverlay
-      [cdkConnectedOverlayOrigin]="trigger"
-      [cdkConnectedOverlayOpen]="showMenu"
-      cdkConnectedOverlayBackdropClass="cdk-overlay-dark-backdrop"
-      (backdropClick)="showMenu = false"
-    >
-      <div class="modal-menu bg-gray-50 p-4 shadow-md mt-1 rounded flex">
-        <ngbiz-avatar [src]="user?.picture" [name]="user?.name"></ngbiz-avatar>
-        <div class="pl-3">
-          <div class="min-h-8 flex flex-col justify-center">
-            <div>{{ user?.name }}</div>
-            <div *ngIf="user?.email" class="text-xs">{{ user?.email }}</div>
-          </div>
-          <div class="mt-2 text-right">
-            <button mat-button (click)="logoutButtonClick.emit()">
-              <mat-icon>exit_to_app</mat-icon><span>{{ logoutText }}</span>
-            </button>
+  @if (showDefaultUserInfo) {
+    <div
+      cdkOverlayOrigin
+      #trigger="cdkOverlayOrigin"
+      class="flex cursor-pointer px-[6px]"
+      >
+      <ngbiz-avatar
+        [src]="user?.picture"
+        [name]="user?.name"
+        [size]="avatarSize"
+        (click)="showMenu = !showMenu"
+      ></ngbiz-avatar>
+      <!-- User menu -->
+      <ng-template
+        cdkConnectedOverlayHasBackdrop
+        cdkConnectedOverlay
+        [cdkConnectedOverlayOrigin]="trigger"
+        [cdkConnectedOverlayOpen]="showMenu"
+        cdkConnectedOverlayBackdropClass="cdk-overlay-dark-backdrop"
+        (backdropClick)="showMenu = false"
+        >
+        <div class="modal-menu bg-gray-50 p-4 shadow-md mt-1 rounded flex">
+          <ngbiz-avatar [src]="user?.picture" [name]="user?.name"></ngbiz-avatar>
+          <div class="pl-3">
+            <div class="min-h-8 flex flex-col justify-center">
+              <div>{{ user?.name }}</div>
+              @if (user?.email) {
+                <div class="text-xs">{{ user?.email }}</div>
+              }
+            </div>
+            <div class="mt-2 text-right">
+              <button mat-button (click)="logoutButtonClick.emit()">
+                <mat-icon>exit_to_app</mat-icon><span>{{ logoutText }}</span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </ng-template>
-  </div>
+      </ng-template>
+    </div>
+  }
   <ng-content select="[afterUser]"></ng-content>
 </mat-toolbar>

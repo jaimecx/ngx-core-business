@@ -1,6 +1,6 @@
 {
   "name": "ngx-core-business",
-  "version": "19.2.0",
+  "version": "20.0.0",
   "description": "A comprehensive solution designed to streamline the development of enterprise-level Angular applications.",
   "keywords": [
     "Angular",
@@ -27,9 +27,9 @@
     }
   },
   "peerDependencies": {
-    "@angular/common": "^19.0.0",
-    "@angular/core": "^19.0.0",
-    "@angular/material": "^19.0.0"
+    "@angular/common": "^20.0.0",
+    "@angular/core": "^20.0.0",
+    "@angular/material": "^20.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
@@ -37,10 +37,10 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jxcodes/ngx-core-business.git"
+    "url": "git+https://github.com/jaimecx/ngx-core-business.git"
   },
   "bugs": {
-    "url": "https://github.com/jxcodes/ngx-core-business/issues"
+    "url": "https://github.com/jaimecx/ngx-core-business/issues"
   },
-  "homepage": "https://github.com/jxcodes/ngx-core-business#readme"
+  "homepage": "https://github.com/jaimecx/ngx-core-business#readme"
 }

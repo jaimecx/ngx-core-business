@@ -1,5 +1,9 @@
 <button [type]="submit?'submit':'button'" [disabled]="disabled || activeProcess" mat-raised-button [color]="color"
   [class.rounded]="rounded" (click)="onButtonClick.emit()">
-  <span *ngIf="activeProcess" class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-  <mat-icon *ngIf="icon&&!activeProcess" [svgIcon]="icon"></mat-icon>{{activeProcess ? activeProcessText: text}}
-</button>
+  @if (activeProcess) {
+    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+  }
+  @if (icon&&!activeProcess) {
+    <mat-icon [svgIcon]="icon"></mat-icon>
+    }{{activeProcess ? activeProcessText: text}}
+  </button>

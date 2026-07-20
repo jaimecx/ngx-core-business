@@ -66,4 +66,4 @@ export class AppComponent {}
 
 ## Documentation 📚
 
-[ngx-core-business Documentation](https://jxcodes.github.io/ngx-core-business)
+[ngx-core-business Documentation](https://jaimecx.github.io/ngx-core-business)

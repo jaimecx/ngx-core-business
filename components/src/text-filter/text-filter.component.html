@@ -2,5 +2,7 @@
   <mat-icon class="search-icon">search</mat-icon>
   <input type="text" (input)="onSearchValueChange($event.target)" [placeholder]="placeholder"
     type="text" [(ngModel)]="value" />
-  <mat-icon *ngIf="value" class="clear-button" (click)="clearText()">clear</mat-icon>
+  @if (value) {
+    <mat-icon class="clear-button" (click)="clearText()">clear</mat-icon>
+  }
 </div>

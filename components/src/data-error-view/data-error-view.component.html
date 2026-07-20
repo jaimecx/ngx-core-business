@@ -3,10 +3,14 @@
     <mat-icon class="icon" [svgIcon]="errorIcon"></mat-icon>
   </div>
   <div class="messaje">{{message}}</div>
-  <div *ngIf="showActionButton" class="action-container">
-    <button color="primary" mat-stroked-button (click)="actionClick.emit()">
-      <mat-icon *ngIf="buttonIcon" class="action-icon" [svgIcon]="buttonIcon"></mat-icon>
-      <span>{{buttonText}}</span>
-    </button>
-  </div>
+  @if (showActionButton) {
+    <div class="action-container">
+      <button color="primary" mat-stroked-button (click)="actionClick.emit()">
+        @if (buttonIcon) {
+          <mat-icon class="action-icon" [svgIcon]="buttonIcon"></mat-icon>
+        }
+        <span>{{buttonText}}</span>
+      </button>
+    </div>
+  }
 </div>
