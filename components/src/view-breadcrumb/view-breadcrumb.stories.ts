@@ -1,5 +1,5 @@
-import { moduleMetadata } from '@storybook/angular';
-import type { Meta } from '@storybook/angular';
+import { moduleMetadata } from '@storybook/angular-vite';
+import type { Meta } from '@storybook/angular-vite';
 
 import { NgBizBreadcrumbModule } from './view-breadcrumb.module';
 import { ViewBreadcrumbComponent } from './view-breadcrumb.component';
