@@ -1,0 +1,9 @@
+import{k as n,S as l,l as c,aB as p,aw as i,ax as o,ay as h,az as u,aA as m}from"./angular-platform-Cx1L7wmy.js";import{F as d}from"./forms-DxR5ycz0.js";import{M as b}from"./icon-DQTuCTWf.js";const x=`<div class="wrapper">
+  <mat-icon class="search-icon">search</mat-icon>
+  <input type="text" (input)="onSearchValueChange($event.target)" [placeholder]="placeholder"
+    type="text" [(ngModel)]="value" />
+  @if (value) {
+    <mat-icon class="clear-button" (click)="clearText()">clear</mat-icon>
+  }
+</div>
+`,v=".wrapper{display:flex;width:100%;position:relative}input{flex:1;padding:0 31px;min-height:26px;width:100%;height:26px;border:1px solid #bdbdbd;border-radius:4px;outline-color:#37474f}input:focus-visible{outline-color:var(--ngbiz-primary, var(--mat-sys-primary, #76b82a));outline-style:solid;outline-width:1px;border-color:var(--ngbiz-primary, var(--mat-sys-primary, #76b82a))}.search-icon,.clear-button{font-size:20px;width:20px;height:20px}.search-icon{position:absolute;top:50%;left:7px;transform:translateY(-50%)}.clear-button{position:absolute;top:50%;right:7px;transform:translateY(-50%);cursor:pointer}.clear-button:hover{color:var(--ngbiz-primary, var(--mat-sys-primary, #76b82a))}";var t;let r=(t=class{constructor(){this.debounceTime=500,this.placeholder="Buscar",this.value="",this.valueChange=new n,this.searchBoxObs=new l,this.searchBox=this.searchBoxObs.asObservable();const e=this;e.searchBox.pipe(c(e.debounceTime)).subscribe(a=>{e.fireEvent(a)})}onSearchValueChange(e){let a=(e.value||"").trim();if(this.debounceTime>0){this.searchBoxObs.next(a);return}this.fireEvent(a)}fireEvent(e){this.valueChange.emit(e)}clearText(){this.value="",this.fireEvent("")}},t.ctorParameters=()=>[],t.propDecorators={debounceTime:[{type:i}],placeholder:[{type:i}],valueChange:[{type:p}]},t);r=o([h({selector:"ngbiz-text-filter",template:x,standalone:!1,styles:[v]})],r);let s=class{};s=o([u({declarations:[r],imports:[m,d,b],exports:[r]})],s);export{s as N,r as T};
