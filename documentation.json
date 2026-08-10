@@ -322,23 +322,23 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ngx-core-business/components/src/edition-pin/edition-pin.stories.ts",
-                "coverageIgnore": false,
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<EditionPinComponent>",
-                "defaultValue": "{\n  title: 'Components/EditionPin',\n  tags: ['autodocs'],\n  component: EditionPinComponent,\n  decorators: [\n    moduleMetadata({\n      imports: [NgBizEditionPinModule],\n    }),\n  ],\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ngx-core-business/components/src/dialog/dialog.stories.ts",
                 "coverageIgnore": false,
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<DialogComponent>",
                 "defaultValue": "{\n  title: 'Components/Dialog',\n  tags: ['autodocs'],\n  component: DialogComponent,\n  decorators: [\n    moduleMetadata({\n      imports: [NgBizDialogModule],\n    }),\n  ],\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ngx-core-business/components/src/edition-pin/edition-pin.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<EditionPinComponent>",
+                "defaultValue": "{\n  title: 'Components/EditionPin',\n  tags: ['autodocs'],\n  component: EditionPinComponent,\n  decorators: [\n    moduleMetadata({\n      imports: [NgBizEditionPinModule],\n    }),\n  ],\n}"
             },
             {
                 "name": "meta",
@@ -481,7 +481,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Preview",
-                "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+                "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n    a11y: {\n      // 'todo' - show a11y violations in the test UI only\n      // 'error' - fail CI on a11y violations\n      // 'off' - skip a11y checks entirely\n      test: 'todo',\n    },\n  },\n}"
             },
             {
                 "name": "WithCustomSlots",
@@ -541,8 +541,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "coverageIgnore": false,
-                "rawtype": "StoryObj<EditionPinComponent>",
-                "file": "projects/ngx-core-business/components/src/edition-pin/edition-pin.stories.ts",
+                "rawtype": "StoryObj<DialogComponent>",
+                "file": "projects/ngx-core-business/components/src/dialog/dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "rawdescription": "",
@@ -554,8 +554,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "coverageIgnore": false,
-                "rawtype": "StoryObj<DialogComponent>",
-                "file": "projects/ngx-core-business/components/src/dialog/dialog.stories.ts",
+                "rawtype": "StoryObj<EditionPinComponent>",
+                "file": "projects/ngx-core-business/components/src/edition-pin/edition-pin.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "rawdescription": "",
@@ -1225,7 +1225,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Preview",
-                    "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+                    "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n    a11y: {\n      // 'todo' - show a11y violations in the test UI only\n      // 'error' - fail CI on a11y violations\n      // 'off' - skip a11y checks entirely\n      test: 'todo',\n    },\n  },\n}"
                 }
             ]
         },
@@ -1277,21 +1277,6 @@
                     "kind": 184
                 }
             ],
-            "projects/ngx-core-business/components/src/edition-pin/edition-pin.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "coverageIgnore": false,
-                    "rawtype": "StoryObj<EditionPinComponent>",
-                    "file": "projects/ngx-core-business/components/src/edition-pin/edition-pin.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "rawdescription": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
             "projects/ngx-core-business/components/src/dialog/dialog.stories.ts": [
                 {
                     "name": "Story",
@@ -1300,6 +1285,21 @@
                     "coverageIgnore": false,
                     "rawtype": "StoryObj<DialogComponent>",
                     "file": "projects/ngx-core-business/components/src/dialog/dialog.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/ngx-core-business/components/src/edition-pin/edition-pin.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "coverageIgnore": false,
+                    "rawtype": "StoryObj<EditionPinComponent>",
+                    "file": "projects/ngx-core-business/components/src/edition-pin/edition-pin.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "rawdescription": "",

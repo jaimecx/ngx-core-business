@@ -1,4 +1,4 @@
-import{m as v}from"./chunk-KBKLVYEJ-B862JdNq.js";import"./iframe-CN0x9H_N.js";import{k as f,aC as u,ax as m,aR as x,aw as _,ay as y,az as E,aA as b,aB as D}from"./angular-platform-C_MM8IP_.js";import{N as T}from"./text-filter.module-BMIKD2dc.js";import"./preload-helper-Dp1pzeXC.js";import"./forms-pOSvA9S8.js";import"./icon-C2gonzmO.js";import"./private-CWuS7jdp.js";import"./bidi-l_WyJb_E.js";const O=`<ng-content select="[start]"></ng-content>
+import{m as v}from"./chunk-KBKLVYEJ-C2BMXH8L.js";import"./iframe-BiQvwhQz.js";import{k as f,aC as u,ax as m,aR as x,aw as _,ay as y,az as E,aA as b,aB as D}from"./angular-platform-C_MM8IP_.js";import{N as T}from"./text-filter.module-BMIKD2dc.js";import"./preload-helper-Dp1pzeXC.js";import"./forms-pOSvA9S8.js";import"./icon-C2gonzmO.js";import"./private-CWuS7jdp.js";import"./bidi-l_WyJb_E.js";const O=`<ng-content select="[start]"></ng-content>
 <ngbiz-text-filter (valueChange)="setSearchFilterValue($event)" [debounceTime]="searchDebounceTime"></ngbiz-text-filter>
 <ng-content select="[afterSearchBox]"></ng-content>
 <ng-content select="[end]"></ng-content>
