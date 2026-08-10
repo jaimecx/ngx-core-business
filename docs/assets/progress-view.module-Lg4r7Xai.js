@@ -1,0 +1,5 @@
+import{aD as s,aw as r,ax as o,ay as i,az as n,aA as p}from"./angular-platform-C_MM8IP_.js";import{M as l}from"./progress-bar-C1idGHSe.js";const d=`<div>\r
+  <span>{{text()}}</span>\r
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>\r
+</div>\r
+`,g=":host{background-color:var(--mat-sys-surface-variant);position:absolute;left:0;top:0;right:0;bottom:0;display:flex}:host>div{margin:auto}span{letter-spacing:4px;font-size:14px;display:block;margin-bottom:6px}mat-progress-bar{height:6px;border-radius:4px}";var t;let e=(t=class{constructor(){this.text=s("Cargando..."),this.zIndex=s(1e3)}},t.propDecorators={text:[{type:r,args:[{isSignal:!0,alias:"text",required:!1,transform:void 0}]}],zIndex:[{type:r,args:[{isSignal:!0,alias:"zIndex",required:!1,transform:void 0}]}]},t);e=o([i({selector:"ngbiz-progress-view",template:d,changeDetection:n.OnPush,standalone:!0,imports:[l],host:{"[style.z-index]":"zIndex()"},styles:[g]})],e);let a=class{};a=o([p({imports:[e],exports:[e]})],a);export{a as N,e as P};
