@@ -1,5 +1,5 @@
-import { moduleMetadata } from '@storybook/angular';
-import type { Meta, StoryObj } from '@storybook/angular';
+import { moduleMetadata } from '@storybook/angular-vite';
+import type { Meta, StoryObj } from '@storybook/angular-vite';
 
 import { NgBizListToolbarModule } from './list-toolbar.module';
 import { ListToolbarComponent } from './list-toolbar.component';

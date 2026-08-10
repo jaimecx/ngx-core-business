@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { FiltersContainerComponent } from '../filters-container.component';
 import { CollectionFilter } from 'ngx-core-business/types';
 
@@ -6,6 +6,7 @@ import { CollectionFilter } from 'ngx-core-business/types';
     selector: 'ngbiz-list-toolbar',
     templateUrl: './list-toolbar.component.html',
     styleUrls: ['./list-toolbar.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class ListToolbarComponent extends FiltersContainerComponent {

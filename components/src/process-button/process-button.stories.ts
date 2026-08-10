@@ -1,5 +1,5 @@
-import { moduleMetadata } from '@storybook/angular';
-import type { Meta, StoryObj } from '@storybook/angular';
+import { moduleMetadata } from '@storybook/angular-vite';
+import type { Meta, StoryObj } from '@storybook/angular-vite';
 
 import { NgBizProcessButtonModule } from './process-button.module';
 import { ProcessButtonComponent } from './process-button.component';

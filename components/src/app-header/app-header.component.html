@@ -18,8 +18,8 @@
       class="flex cursor-pointer px-[6px]"
       >
       <ngbiz-avatar
-        [src]="user?.picture"
-        [name]="user?.name"
+        [src]="$safeNavigationMigration(user?.picture)"
+        [name]="$safeNavigationMigration(user?.name)"
         [size]="avatarSize"
         (click)="showMenu = !showMenu"
       ></ngbiz-avatar>
@@ -33,7 +33,7 @@
         (backdropClick)="showMenu = false"
         >
         <div class="modal-menu bg-gray-50 p-4 shadow-md mt-1 rounded flex">
-          <ngbiz-avatar [src]="user?.picture" [name]="user?.name"></ngbiz-avatar>
+          <ngbiz-avatar [src]="$safeNavigationMigration(user?.picture)" [name]="$safeNavigationMigration(user?.name)"></ngbiz-avatar>
           <div class="pl-3">
             <div class="min-h-8 flex flex-col justify-center">
               <div>{{ user?.name }}</div>

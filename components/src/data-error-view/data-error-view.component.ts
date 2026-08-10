@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter, Input } from '@angular/core';
+import { Component, Output, EventEmitter, Input, ChangeDetectionStrategy } from '@angular/core';
 
 const HTTP_STATUS_MESSAGES: { [key: number]: string } = {
   0: 'No se logró establecer conexión con el servidor',
@@ -15,6 +15,7 @@ const HTTP_STATUS_MESSAGES: { [key: number]: string } = {
     templateUrl: './data-error-view.component.html',
     styleUrls: ['./data-error-view.component.scss'],
     host: { class: 'container-center info-view danger' },
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class DataErrorViewComponent {

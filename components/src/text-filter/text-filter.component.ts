@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, ChangeDetectionStrategy } from '@angular/core';
 import { Subject } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 
@@ -6,6 +6,7 @@ import { debounceTime } from 'rxjs/operators';
   selector: 'ngbiz-text-filter',
   templateUrl: './text-filter.component.html',
   styleUrls: ['./text-filter.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false,
 })
 export class TextFilterComponent {

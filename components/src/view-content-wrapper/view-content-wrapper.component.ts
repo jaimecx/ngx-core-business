@@ -3,12 +3,13 @@
  *
  * @author Jaime Cruz.
  */
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'ngbiz-view-content-wrapper',
     templateUrl: './view-content-wrapper.component.html',
     styleUrls: ['./view-content-wrapper.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class ViewContentWrapperComponent {

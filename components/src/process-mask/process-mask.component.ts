@@ -1,9 +1,10 @@
-import { Component, Inject, Input } from '@angular/core';
+import { Component, Inject, Input, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
     templateUrl: './process-mask.component.html',
     styleUrls: ['./process-mask.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class ProcessMaskComponent {

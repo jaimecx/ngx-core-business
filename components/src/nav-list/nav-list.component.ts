@@ -7,6 +7,7 @@ import {
   OnInit,
   Renderer2,
   TemplateRef,
+  ChangeDetectionStrategy
 } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { NavItem } from './nav-item.type';
@@ -15,6 +16,7 @@ import { NavigationEnd, Router } from '@angular/router';
   selector: 'ngbiz-nav-list',
   templateUrl: './nav-list.component.html',
   styleUrls: ['./nav-list.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false,
 })
 export class NavListComponent implements OnInit, AfterViewChecked {

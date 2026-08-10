@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 /**
  * Use this component to display a breadcrumb trail.
@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
     selector: 'ngbiz-view-breadcrumb',
     templateUrl: './view-breadcrumb.component.html',
     styleUrls: ['./view-breadcrumb.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class ViewBreadcrumbComponent { }

@@ -1,4 +1,4 @@
-import { Component, Input, ViewChild } from '@angular/core';
+import { Component, Input, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { Column, GridColumn } from './column';
 import { MatPaginator } from '@angular/material/paginator';
 
@@ -6,6 +6,7 @@ import { MatPaginator } from '@angular/material/paginator';
     selector: 'ngbiz-grid',
     templateUrl: './grid.component.html',
     styleUrl: './grid.component.scss',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class GridComponent {

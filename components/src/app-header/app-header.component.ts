@@ -1,10 +1,11 @@
-import { Component, EventEmitter, HostBinding, Input, Output } from '@angular/core';
+import { Component, EventEmitter, HostBinding, Input, Output, ChangeDetectionStrategy } from '@angular/core';
 import { User } from './user.model';
 
 @Component({
   selector: 'ngbiz-app-header',
   templateUrl: './app-header.component.html',
   styleUrls: ['./app-header.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class AppHeaderComponent {

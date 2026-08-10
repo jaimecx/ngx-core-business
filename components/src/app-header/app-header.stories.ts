@@ -1,5 +1,5 @@
-import { moduleMetadata } from '@storybook/angular';
-import type { Meta, StoryObj } from '@storybook/angular';
+import { moduleMetadata } from '@storybook/angular-vite';
+import type { Meta, StoryObj } from '@storybook/angular-vite';
 import { AppHeaderComponent } from './app-header.component';
 import { NgBizAppHeaderModule } from './app-header.module';
 

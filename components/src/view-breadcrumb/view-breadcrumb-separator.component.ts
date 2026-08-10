@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'ngbiz-view-breadcrumb-separator',
@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
       padding-top: 1px;
     }
   `],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class ViewBreadcrumbSeparatorComponent {
