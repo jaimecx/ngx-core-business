@@ -1,4 +1,4 @@
-import{m as b}from"./chunk-KBKLVYEJ-DWIpczdz.js";import"./iframe-TGmgDK9p.js";import{ax as n,ay as c,az as m,aA as d,aB as g}from"./angular-platform-C_MM8IP_.js";import"./preload-helper-Dp1pzeXC.js";const l=`<ng-content></ng-content>
+import{m as b}from"./chunk-KBKLVYEJ-B862JdNq.js";import"./iframe-CN0x9H_N.js";import{ax as n,ay as c,az as m,aA as d,aB as g}from"./angular-platform-C_MM8IP_.js";import"./preload-helper-Dp1pzeXC.js";const l=`<ng-content></ng-content>
 `,u=":host{display:flex;align-items:center;height:28px;line-height:28px;padding-left:16px;padding-right:16px;background-color:#e0e0e0;font-weight:500;text-transform:uppercase;font-size:13px}";let e=class{};e=n([c({selector:"ngbiz-view-breadcrumb",template:l,changeDetection:m.Eager,standalone:!1,styles:[u]})],e);const _=`
     :host {
       margin: 0 8px;
